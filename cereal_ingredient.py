@@ -1,0 +1,2 @@
+class CerealIngredient:
+    pass
