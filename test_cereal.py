@@ -18,6 +18,23 @@ def test_cereal_with_ingredients(make_cereal):
     assert len(make_cereal.ingredients) == 4
 
 
+def test_add_ingredient(make_cereal):
+    ingredient = Additive('Sawdust', 0.01, 'SA', 'wood')
+    make_cereal.add_ingredient(CerealIngredient(make_cereal, ingredient, 0.1))
+    assert len(make_cereal.ingredients) == 5
+
+
+def test_take_ingredient(make_cereal):
+    cereal_ingredient = make_cereal.take_ingredient(2)
+    assert cereal_ingredient.ingredient.name == 'Oats'
+
+
+def test_remove_ingredient(make_cereal):
+    make_cereal.remove_ingredient(1)
+    assert len(make_cereal.ingredients) == 3
+    assert make_cereal.ingredients[1].ingredient.name == 'Oats'
+
+
 def test_ingredient_to_cereal():
     cereal = Cereal('Fastbreak')
     cereal_ingredient = CerealIngredient(cereal, None, 100)

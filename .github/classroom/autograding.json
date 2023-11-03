@@ -8,7 +8,7 @@
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 1
+      "points": 2
     },
     {
       "name": "test_cereal_with_ingredients",
@@ -18,7 +18,37 @@
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 1
+      "points": 2
+    },
+    {
+      "name": "test_add_ingredient",
+      "setup": "sudo -H pip3 install -r requirements.txt",
+      "run": "pytest -v  -k \"test_add_ingredient\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "test_take_ingredient",
+      "setup": "sudo -H pip3 install -r requirements.txt",
+      "run": "pytest -v  -k \"test_take_ingredient\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "test_remove_ingredient",
+      "setup": "sudo -H pip3 install -r requirements.txt",
+      "run": "pytest -v  -k \"test_remove_ingredient\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
     },
     {
       "name": "test_ingredient_to_cereal",
@@ -28,7 +58,7 @@
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 1
+      "points": 2
     },
     {
       "name": "test_calculate_cost",
@@ -38,7 +68,7 @@
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 1
+      "points": 2
     }
   ]
 }
