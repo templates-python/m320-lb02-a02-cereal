@@ -42,9 +42,8 @@ def test_ingredient_to_cereal():
 
 
 def test_calculate_cost(capsys, make_cereal):
-    make_cereal.calculate_cost(750)
-    output = capsys.readouterr().out
-    assert output == 'Cost: 925.50\n'
+    cost = make_cereal.calculate_cost(750)
+    assert cost == pytest.approx(925.5)
 
 
 @pytest.fixture
