@@ -37,7 +37,7 @@ def test_remove_ingredient(make_cereal):
 
 def test_ingredient_to_cereal():
     cereal = Cereal('Fastbreak')
-    cereal_ingredient = CerealIngredient(cereal, None, 100)
+    cereal_ingredient = CerealIngredient(cereal, None, 0.99)
     assert cereal_ingredient.cereal.cereal_name == 'Fastbreak'
 
 
