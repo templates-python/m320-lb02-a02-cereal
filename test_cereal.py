@@ -1,3 +1,5 @@
+from random import random, randint
+
 import pytest
 
 from additive import Additive
@@ -11,6 +13,8 @@ def test_cereal_empty():
     cereal = Cereal('My mampf')
     assert isinstance(cereal, Cereal)
     assert len(cereal.ingredients) == 0
+    assert isinstance(type(cereal).cereal_name, property)
+    assert isinstance(type(cereal).ingredients, property)
 
 
 def test_cereal_with_ingredients(make_cereal):
@@ -39,11 +43,14 @@ def test_ingredient_to_cereal():
     cereal = Cereal('Fastbreak')
     cereal_ingredient = CerealIngredient(cereal, None, 0.99)
     assert cereal_ingredient.cereal.cereal_name == 'Fastbreak'
+    assert isinstance(type(cereal_ingredient).ingredient, property)
+    assert isinstance(type(cereal_ingredient).proportion, property)
 
 
 def test_calculate_cost(capsys, make_cereal):
-    cost = make_cereal.calculate_cost(750)
-    assert cost == pytest.approx(925.5)
+    amount = randint(500,999)
+    cost = make_cereal.calculate_cost(amount)
+    assert cost == pytest.approx(amount*1.234)
 
 
 @pytest.fixture
