@@ -1,16 +1,14 @@
-from abc import ABC
 
 from ingredient import Ingredient
 
 
-class Additive(Ingredient, ABC):
+class Additive(Ingredient):
     """
     an additive (sugar, color, ...) for a cereal
     """
 
     def __init__(self, name, price, origin, allergen=''):
-        self.name = name
-        self.price = price
+        super().__init__(name, price)
         self.origin = origin
         self.allergen = allergen
 

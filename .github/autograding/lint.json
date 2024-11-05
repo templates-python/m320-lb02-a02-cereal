@@ -1,0 +1,9 @@
+{
+  "files": [
+    "cereal.py",
+    "cereal_ingredient.py",
+    "missing_name_error.py"
+  ],
+  "ignore": [],
+  "max": 4
+}

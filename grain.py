@@ -1,18 +1,24 @@
-from abc import ABC
-
+""" Provides the Grain class for the grains of the cereals """
 from ingredient import Ingredient
 
 
-class Grain(Ingredient, ABC):
+class Grain(Ingredient):
     """
     a type of grain as ingredient of a cereal
+
+    Attributes
+    ----------
+    allergen : str
+        the allergen of this grain
     """
+
     def __init__(self, name, price, allergen=''):
-        self.name = name
-        self.price = price
+        """ Creates a new grain with the given name, price and allergen """
+        super().__init__(name, price)
         self.allergen = allergen
 
     def __str__(self):
+        """ Returns a string representation of this grain """
         return f"Grain(name='{self.name}', price={self.price}, allergen='{self.allergen}')"
 
     @property

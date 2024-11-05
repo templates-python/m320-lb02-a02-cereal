@@ -1,16 +1,14 @@
-from abc import ABC
 
 from ingredient import Ingredient
 
 
-class Fruit(Ingredient, ABC):
+class Fruit(Ingredient):
     """
     a fruit as ingredient of a cereal
     """
 
     def __init__(self, name, price, origin):
-        self.name = name
-        self.price = price
+        super().__init__(name, price)
         self.origin = origin
 
     def __str__(self):

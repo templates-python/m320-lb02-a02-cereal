@@ -1,0 +1,58 @@
+[
+  {
+    "name": "test_initiate_cereal_empty",
+    "function": "test_initiate_cereal_empty",
+    "timeout": 10,
+    "points": 1
+  },{
+    "name": "test_cereal_name",
+    "function": "test_cereal_name",
+    "timeout": 10,
+    "points": 1
+  },{
+    "name": "test_change_cereal_name",
+    "function": "test_change_cereal_name",
+    "timeout": 10,
+    "points": 1
+  },{
+    "name": "test_add_ingredient",
+    "function": "test_add_ingredient",
+    "timeout": 10,
+    "points": 1
+  },{
+    "name": "test_reference_to_cereal",
+    "function": "test_reference_to_cereal",
+    "timeout": 10,
+    "points": 2
+  },{
+    "name": "test_add_more_ingredients",
+    "function": "test_add_more_ingredients",
+    "timeout": 10,
+    "points": 1
+  },{
+    "name": "test_take_ingredient",
+    "function": "test_take_ingredient",
+    "timeout": 10,
+    "points": 2
+  },{
+    "name": "test_remove_ingredient_by_index",
+    "function": "test_remove_ingredient_by_index",
+    "timeout": 10,
+    "points": 2
+  },{
+    "name": "test_remove_ingredient_by_name",
+    "function": "test_remove_ingredient_by_name",
+    "timeout": 10,
+    "points": 2
+  },{
+    "name": "test_remove_ingredient_by_wrong_name",
+    "function": "test_remove_ingredient_by_wrong_name",
+    "timeout": 10,
+    "points": 1
+  },{
+    "name": "test_calculate_cost",
+    "function": "test_calculate_cost",
+    "timeout": 10,
+    "points": 2
+  }
+]
